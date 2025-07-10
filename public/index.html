@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DDR Music Rhythm Game</title>
+  <!-- Tailwind CSS for styling -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- p5.js and p5.sound for game visuals and audio -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.min.js"></script>
+  <!-- Firebase SDKs for backend and analytics -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js"></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+  <h1 class="text-4xl font-bold neon-text mb-4">DDR Music Rhythm Game</h1>
+  <div id="game-container" class="flex flex-col items-center">
+    <div id="score" class="text-2xl neon-text mb-2">Score: 0</div>
+    <div id="canvas-container"></div>
+    <button id="start-btn" class="btn-neon mt-4">Start Game</button>
+  </div>
+  <!-- p5.js game logic -->
+  <script src="sketch.js"></script>
+</body>
+</html>
